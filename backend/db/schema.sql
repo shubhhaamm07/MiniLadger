@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS users (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  phone TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS loans (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES users(id),
+  friend_name TEXT NOT NULL CHECK (length(btrim(friend_name)) > 0),
+  amount_paise INTEGER NOT NULL CHECK (amount_paise > 0),
+  due_date DATE NOT NULL,
+  repaid_at TIMESTAMPTZ
+);
