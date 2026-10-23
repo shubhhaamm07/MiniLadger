@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">MiniLedger: a loan between friends</title>
+  <desc id="desc">Two friends exchange a rupee note across a table. A calendar, ledger, coins, and repayment check show the life of a loan.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="960" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F3"/>
+      <stop offset=".55" stop-color="#F8EEE6"/>
+      <stop offset="1" stop-color="#EEDDD2"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(490 267) rotate(90) scale(276 385)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7EA"/>
+      <stop offset=".6" stop-color="#F6DCCB"/>
+      <stop offset="1" stop-color="#E8C5B6"/>
+    </radialGradient>
+    <linearGradient id="coral" x1="160" y1="306" x2="342" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F28F82"/>
+      <stop offset=".55" stop-color="#DF6E68"/>
+      <stop offset="1" stop-color="#B94E51"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="615" y1="302" x2="837" y2="509" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9FC2B8"/>
+      <stop offset=".55" stop-color="#5D958F"/>
+      <stop offset="1" stop-color="#3B6C72"/>
+    </linearGradient>
+    <linearGradient id="skinLeft" x1="191" y1="163" x2="308" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFC099"/>
+      <stop offset=".55" stop-color="#D99972"/>
+      <stop offset="1" stop-color="#B97658"/>
+    </linearGradient>
+    <linearGradient id="skinRight" x1="669" y1="150" x2="777" y2="301" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6CBAB"/>
+      <stop offset=".6" stop-color="#E6A77F"/>
+      <stop offset="1" stop-color="#C88465"/>
+    </linearGradient>
+    <linearGradient id="banknote" x1="423" y1="314" x2="555" y2="375" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7DDB9"/>
+      <stop offset=".5" stop-color="#9ABD9C"/>
+      <stop offset="1" stop-color="#719C81"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="48" y1="442" x2="907" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C98962"/>
+      <stop offset=".5" stop-color="#AF6F55"/>
+      <stop offset="1" stop-color="#8E5546"/>
+    </linearGradient>
+    <linearGradient id="ledger" x1="365" y1="424" x2="567" y2="563" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCFEF7"/>
+      <stop offset="1" stop-color="#E9EFE1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE4A0"/>
+      <stop offset=".55" stop-color="#EDB86B"/>
+      <stop offset="1" stop-color="#C8904F"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.3" fill="#A86F62" opacity=".19"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="14" y="14" width="932" height="592" rx="38"/>
+    </clipPath>
+  </defs>
+
+  <!-- Warm room and architectural frame. -->
+  <g clip-path="url(#frame)">
+    <rect x="14" y="14" width="932" height="592" rx="38" fill="url(#background)"/>
+    <rect x="14" y="14" width="932" height="592" fill="url(#dots)"/>
+    <path d="M198 457V274C198 134 326 42 481 42s282 95 282 232v183H198Z" fill="url(#halo)"/>
+    <path d="M210 443V273C210 141 334 56 481 56c147 0 270 88 270 217v170" stroke="#DAB5A4" stroke-width="3" opacity=".7"/>
+    <path d="M245 443V276c0-112 106-189 236-189 130 0 235 78 235 189v167" stroke="#FFF8F0" stroke-width="7" opacity=".65"/>
+    <path d="M18 445c140-45 268-49 431-34 191 17 301 18 498-46v252H18V445Z" fill="#ECD7CA" opacity=".53"/>
+    <path d="M25 130c48-38 84-37 130-22M805 148c42-28 79-27 129 6M59 402c36-18 64-17 91-11" stroke="#DABCAA" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+    <circle cx="116" cy="205" r="5" fill="#D77870"/>
+    <circle cx="850" cy="328" r="6" fill="#7FA99C"/>
+    <circle cx="826" cy="52" r="3" fill="#E3B86E"/>
+    <path d="m150 277 5-13 5 13 13 5-13 5-5 13-5-13-13-5 13-5ZM833 242l4-10 4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#DCA77F" opacity=".75"/>
+
+    <!-- Due-date card. -->
+    <g transform="rotate(-9 144 141)">
+      <rect x="62" y="82" width="180" height="131" rx="21" fill="#B48978" opacity=".19"/>
+      <rect x="56" y="75" width="180" height="131" rx="21" fill="#FFFEFA"/>
+      <rect x="56" y="75" width="180" height="46" rx="21" fill="#E98579"/>
+      <path d="M56 104h180v18H56z" fill="#E98579"/>
+      <path d="M91 69v21m107-21v21" stroke="#725457" stroke-width="9" stroke-linecap="round"/>
+      <path d="M87 137h118M87 162h118M125 131v58m40-58v58" stroke="#EADBD1" stroke-width="2"/>
+      <rect x="128" y="141" width="32" height="19" rx="5" fill="#F8D1C3"/>
+      <path d="m136 150 6 5 10-12" stroke="#B75957" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="100" cy="149" r="3" fill="#C8B7AB"/>
+      <circle cx="183" cy="174" r="3" fill="#C8B7AB"/>
+      <path d="M75 109h66" stroke="#F9D8C8" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Repaid card and its small status marks. -->
+    <g transform="rotate(8 808 150)">
+      <rect x="713" y="94" width="183" height="116" rx="20" fill="#9A7467" opacity=".17"/>
+      <rect x="707" y="88" width="183" height="116" rx="20" fill="#FFFDFC"/>
+      <circle cx="753" cy="146" r="29" fill="#DCEEE1"/>
+      <circle cx="753" cy="146" r="22" fill="#7CB394"/>
+      <path d="m741 146 8 9 16-19" stroke="#F9FFF8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M795 130h63m-63 14h48m-48 14h58" stroke="#AD9D96" stroke-width="5" stroke-linecap="round"/>
+      <path d="M795 178h38" stroke="#E5B18C" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Potted plant adds depth behind the friends. -->
+    <path d="M849 438c-7-58-5-113 10-171m-6 131c-19-35-38-47-56-57m58 39c15-28 30-40 48-49" stroke="#617F6B" stroke-width="6" stroke-linecap="round"/>
+    <path d="M855 309c-10-25 2-46 17-60 11 24 7 45-17 60Zm-22 44c-28-1-39-21-42-42 26 1 43 13 42 42Zm32 7c2-30 20-45 41-51 0 29-14 47-41 51Zm-26-58c-24-11-29-32-24-52 24 11 34 27 24 52Z" fill="#8BAD92"/>
+    <path d="M836 429h54l-7 52h-40l-7-52Z" fill="#C5816B"/>
+    <path d="M840 439h47m-40 29h30" stroke="#EAB09B" stroke-width="3" opacity=".7"/>
+
+    <!-- Chairs and silhouettes. -->
+    <ellipse cx="475" cy="567" rx="424" ry="31" fill="#805D50" opacity=".16"/>
+    <path d="M87 369c0-37 25-61 60-61h92v196H87V369Z" fill="#B99485"/>
+    <path d="M715 314h98c37 0 60 22 60 57v140H715V314Z" fill="#B99485"/>
+    <path d="M84 372c0-34 21-55 58-55h22v171H84V372Zm701-47h28c29 0 50 24 50 54v116h-78V325Z" fill="#D5B7A7"/>
+
+    <!-- Left friend's coat, shirt, and neck. -->
+    <path d="M114 486c0-104 35-166 101-186 38-11 92-3 123 26 31 30 39 94 36 160H114Z" fill="url(#coral)"/>
+    <path d="M127 450c4-80 26-118 70-139-19 47-20 107-13 175h-55l-2-36Z" fill="#FFA294" opacity=".34"/>
+    <path d="M218 288v44c0 28 54 32 58 1v-45h-58Z" fill="#BB795B"/>
+    <path d="M206 307c14 20 30 30 42 31 17 1 30-10 42-30l15 12-26 103h-71l-28-99 26-17Z" fill="#FFF2E8"/>
+    <path d="m207 311 42 35-23 27-47-47m112-18-42 38 25 27 40-49" fill="#E2776C" stroke="#F6A69A" stroke-width="3"/>
+    <path d="m224 374 16 13-12 19 20 73m27-104-16 13 13 18-18 73" stroke="#F4AB9D" stroke-width="3" opacity=".75"/>
+    <path d="M177 332c-20 25-29 70-27 128m166-129c16 27 23 64 22 123" stroke="#B95C59" stroke-width="4" opacity=".47"/>
+    <circle cx="248" cy="391" r="3" fill="#A4514D"/>
+    <circle cx="249" cy="431" r="3" fill="#A4514D"/>
+
+    <!-- Right friend's jacket and blouse. -->
+    <path d="M587 490c-2-106 25-163 88-184 42-15 100-7 133 26 27 27 36 86 37 158H587Z" fill="url(#teal)"/>
+    <path d="M620 481c-2-83 13-131 45-161-13 52-9 111-5 170h-39l-1-9Z" fill="#B1D4C7" opacity=".33"/>
+    <path d="M700 286v45c0 25 55 26 58-2v-43h-58Z" fill="#CB8767"/>
+    <path d="m669 315 58 37 63-37-13 145H681l-12-145Z" fill="#FFF7EB"/>
+    <path d="m673 310 54 43-26 28-45-54 17-17Zm108 0-54 43 29 28 45-52-20-19Z" fill="#66938F" stroke="#A4C9BB" stroke-width="3"/>
+    <path d="M706 392h42m-46 21h49" stroke="#D9C6B8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="727" cy="441" r="3" fill="#4C7A78"/>
+    <path d="M615 351c-7 32-8 73-4 105m194-105c14 24 19 62 18 108" stroke="#356C70" stroke-width="4" opacity=".42"/>
+
+    <!-- Left friend's face and layered hair. -->
+    <ellipse cx="190" cy="220" rx="13" ry="22" fill="#BB785B"/>
+    <ellipse cx="301" cy="222" rx="13" ry="21" fill="#BA795C"/>
+    <path d="M190 181c0-47 20-77 59-81 40-4 63 24 62 75l-7 65c-4 38-25 62-55 63-34 0-54-30-58-70l-1-52Z" fill="url(#skinLeft)"/>
+    <path d="M199 178c7-34 28-53 51-61-13 29-15 72-12 128-18-10-32-34-39-67Z" fill="#FFD5AC" opacity=".28"/>
+    <path d="M188 208c-17-18-18-60-7-83 10-20 29-24 43-22 8-22 43-32 70-15 25 16 33 47 25 83-2 12-8 25-16 35l-8-44c-24 6-47-1-66-15-7 21-19 37-40 44l-1 17Z" fill="#332B29"/>
+    <path d="M184 140c11-35 36-52 67-49 36 4 49 26 58 49-25-24-57-25-78-10-19 12-31 18-47 10Z" fill="#483330"/>
+    <path d="M188 121c19-36 61-51 97-30m-89 45c16-21 32-30 53-31m17-7c14-2 28 2 38 10" stroke="#6B4B3C" stroke-width="5" stroke-linecap="round" opacity=".62"/>
+    <path d="M207 207c9-8 21-9 31-4m28-1c10-5 22-4 30 2" stroke="#51352F" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="223" cy="218" rx="4" ry="6" fill="#2D2828"/>
+    <ellipse cx="280" cy="217" rx="4" ry="6" fill="#2D2828"/>
+    <circle cx="224" cy="216" r="1.5" fill="#FFF6EA"/>
+    <circle cx="281" cy="215" r="1.5" fill="#FFF6EA"/>
+    <path d="M252 222c-4 11-5 20 3 23" stroke="#A9634C" stroke-width="3" stroke-linecap="round"/>
+    <path d="M232 261c12 9 26 9 38-1" stroke="#9E514B" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="206" cy="240" r="11" fill="#D57666" opacity=".25"/>
+    <circle cx="292" cy="240" r="10" fill="#D57666" opacity=".22"/>
+    <path d="M189 218c1-19 7-28 16-30m100-1c7 7 10 18 9 29" stroke="#925941" stroke-width="3" opacity=".5"/>
+
+    <!-- Right friend's face, swept hair, earring, and features. -->
+    <ellipse cx="672" cy="215" rx="13" ry="21" fill="#CB8968"/>
+    <ellipse cx="776" cy="218" rx="13" ry="21" fill="#C48667"/>
+    <path d="M677 178c3-47 22-75 54-80 39-7 61 23 58 74l-8 65c-5 41-23 63-54 64-31 1-51-25-54-65l4-58Z" fill="url(#skinRight)"/>
+    <path d="M680 172c9-26 25-45 44-54-10 31-9 71-4 124-22-14-34-39-40-70Z" fill="#FFE1BD" opacity=".24"/>
+    <path d="M671 188c-16-34-10-74 15-89 9-26 46-34 72-20 32 0 55 34 41 80-3 13-10 25-17 36-7-21-7-42-17-58-16 17-44 25-82 25l-12 26Z" fill="#473632"/>
+    <path d="M683 111c30-26 69-23 92 5 13 17 15 38 10 58-10-29-24-44-45-54-20 18-35 22-57 21v-30Z" fill="#55413A"/>
+    <path d="M677 135c13-33 47-47 77-39m-57 24c14-13 30-19 48-18m10 6c18 9 29 26 32 48" stroke="#836250" stroke-width="5" stroke-linecap="round" opacity=".58"/>
+    <path d="M690 204c9-5 21-5 30-1m23 0c8-6 20-6 29-2" stroke="#6E443A" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="706" cy="216" rx="4" ry="6" fill="#332A29"/>
+    <ellipse cx="758" cy="215" rx="4" ry="6" fill="#332A29"/>
+    <circle cx="707" cy="214" r="1.5" fill="#FFF9EE"/>
+    <circle cx="759" cy="213" r="1.5" fill="#FFF9EE"/>
+    <path d="M733 221c-3 11-4 19 3 23" stroke="#B86E55" stroke-width="3" stroke-linecap="round"/>
+    <path d="M711 258c10 13 31 14 44-1" stroke="#A65351" stroke-width="4" stroke-linecap="round"/>
+    <path d="M675 234c-4 21-5 45 1 59m106-60c3 26 1 47-7 61" stroke="#57413A" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="778" cy="241" r="6" fill="url(#gold)"/>
+    <circle cx="778" cy="241" r="2" fill="#FFF1BF"/>
+    <circle cx="688" cy="239" r="11" fill="#E98675" opacity=".2"/>
+
+    <!-- Sleeves reach toward the shared note. -->
+    <path d="M336 350c33 12 58 12 91-1" stroke="#BF5E5C" stroke-width="53" stroke-linecap="round"/>
+    <path d="M339 344c32 10 57 10 84 0" stroke="#F18D80" stroke-width="43" stroke-linecap="round"/>
+    <path d="M615 348c-27 9-56 11-84 0" stroke="#376C72" stroke-width="55" stroke-linecap="round"/>
+    <path d="M615 343c-27 9-53 10-79 1" stroke="#79A8A0" stroke-width="45" stroke-linecap="round"/>
+    <path d="M389 370c9-18 19-26 34-30m174 29c-10-20-20-27-34-32" stroke="#FFBBB0" stroke-width="3" opacity=".65"/>
+
+    <!-- Several staggered notes, a detailed central note, and both hands. -->
+    <g transform="rotate(-8 485 339)">
+      <rect x="420" y="306" width="134" height="72" rx="9" fill="#6C927B" opacity=".32"/>
+      <rect x="425" y="301" width="134" height="72" rx="9" fill="#B8D2AF"/>
+      <rect x="417" y="295" width="134" height="72" rx="9" fill="url(#banknote)" stroke="#5F896E" stroke-width="2"/>
+      <rect x="424" y="302" width="120" height="58" rx="6" stroke="#E5F0D5" stroke-width="2"/>
+      <path d="M439 304c0 12-5 17-15 17m119-17c-12 0-17 6-17 16m-102 24c11 1 15 6 15 16m87-16c2 10 8 15 18 16" stroke="#E5F0D5" stroke-width="2"/>
+      <circle cx="484" cy="331" r="22" fill="#E2EBCB" opacity=".92"/>
+      <circle cx="484" cy="331" r="17" stroke="#719C81" stroke-width="2"/>
+      <path d="M475 322h18m-18 7h18m-14-7c11 0 11 14 0 14h-4l18 16" stroke="#4F795F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M433 331h20m62 0h19" stroke="#E8F2DC" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="433" cy="313" r="2" fill="#EAF3DD"/>
+      <circle cx="535" cy="350" r="2" fill="#EAF3DD"/>
+    </g>
+    <path d="M403 347c16-13 29-18 41-15l18 7c6 4 6 11-1 15-6 3-15 0-25-1l-16 14c-10 6-23-9-17-20Z" fill="url(#skinLeft)"/>
+    <path d="M572 346c-17-12-29-16-41-12l-16 8c-6 4-4 12 3 14 7 2 15-2 24-2l16 13c11 6 23-13 14-21Z" fill="url(#skinRight)"/>
+    <path d="M411 349c10-8 19-11 28-8m128 8c-9-7-18-10-28-8" stroke="#FFD2AB" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+    <path d="M442 362c6 3 13 3 20 0m53 0c7 3 13 3 19 0" stroke="#B77D61" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Curved exchange trail and tiny sparkles. -->
+    <path d="M383 285c32-25 68-33 100-30 34 2 66 14 96 39" stroke="#D88975" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" opacity=".62"/>
+    <path d="m397 275 4-10 4 10 10 4-10 4-4 10-4-10-10-4 10-4Zm177 2 3-8 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" fill="#E0A361"/>
+    <circle cx="480" cy="250" r="4" fill="#E9B87A"/>
+
+    <!-- Desk, edge, and woodgrain. -->
+    <path d="M40 454c0-17 14-30 31-30h820c17 0 31 13 31 30v27H40v-27Z" fill="#A66C54" opacity=".31"/>
+    <path d="M37 446c0-17 14-30 31-30h824c17 0 31 13 31 30v28H37v-28Z" fill="url(#desk)"/>
+    <path d="M37 470h886v83c0 11-9 20-20 20H57c-11 0-20-9-20-20v-83Z" fill="#955F4C"/>
+    <path d="M60 438h355m151 0h329M55 489h844M76 527h148m495 0h160" stroke="#E8AB80" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+    <path d="M91 469v96m776-96v96" stroke="#70463E" stroke-width="4" opacity=".38"/>
+    <path d="M47 473h866" stroke="#6C473B" stroke-width="5" opacity=".32"/>
+
+    <!-- Open MiniLedger notebook on the desk. -->
+    <path d="M382 443c31-14 68-11 101 0 35-12 72-13 102 1v109c-33-8-68-7-102 4-35-11-69-12-101-3V443Z" fill="#6A554D" opacity=".27"/>
+    <path d="M376 436c31-14 69-11 107 2 35-13 73-15 107-1v111c-37-8-73-5-107 5-38-12-73-12-107-4V436Z" fill="url(#ledger)" stroke="#DBD9CA" stroke-width="2"/>
+    <path d="M483 438v115" stroke="#B8C7AF" stroke-width="3"/>
+    <path d="M386 455c29-9 56-8 85 1m-85 18c29-9 56-8 85 1m-85 18c29-9 56-8 85 1m-85 18c29-9 56-8 85 1m-85 18c29-9 56-8 85 1" stroke="#CFD6C8" stroke-width="2"/>
+    <path d="M496 458c28-8 54-9 80-2m-80 18c28-8 54-9 80-2m-80 18c28-8 54-9 80-2m-80 18c28-8 54-9 80-2m-80 18c28-8 54-9 80-2" stroke="#CFD6C8" stroke-width="2"/>
+    <circle cx="410" cy="472" r="4" fill="#D5746C"/>
+    <circle cx="410" cy="510" r="4" fill="#7EA88D"/>
+    <circle cx="522" cy="492" r="15" fill="#E7F0E4"/>
+    <path d="m514 492 6 6 11-13" stroke="#629374" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M500 532h56" stroke="#D88B73" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Pen, paper clip, coins, and cup make the desk feel lived in. -->
+    <g transform="rotate(16 304 500)">
+      <rect x="301" y="447" width="12" height="99" rx="5" fill="#413C3A"/>
+      <path d="M301 459h12m-9 70h6" stroke="#E7B473" stroke-width="4"/>
+      <path d="m301 546 6 16 6-16" fill="#E8B980"/>
+      <path d="m304 554 3 8 3-8" fill="#433633"/>
+    </g>
+    <path d="M344 488c-10 0-18 8-18 18v25c0 7 6 13 13 13s13-6 13-13v-30c0-4-3-7-7-7s-7 3-7 7v28" stroke="#B9A79B" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="665" cy="539" rx="42" ry="11" fill="#6D534A" opacity=".2"/>
+    <ellipse cx="665" cy="525" rx="33" ry="10" fill="#C58B4F"/>
+    <path d="M632 525v12c0 6 15 11 33 11s33-5 33-11v-12" fill="#D89E58"/>
+    <ellipse cx="665" cy="521" rx="33" ry="10" fill="url(#gold)" stroke="#B77E42" stroke-width="2"/>
+    <ellipse cx="665" cy="521" rx="23" ry="6" stroke="#FBE4A8" stroke-width="2"/>
+    <path d="M657 518h16m-16 5h16m-13-5c8 0 8 10 0 10l12 8" stroke="#A9783F" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="704" cy="503" rx="31" ry="10" fill="#E7B36B"/>
+    <path d="M673 502v12c0 5 14 9 31 9s31-4 31-9v-12" fill="#C99151"/>
+    <ellipse cx="704" cy="500" rx="31" ry="10" fill="url(#gold)" stroke="#BD8749" stroke-width="2"/>
+    <path d="M694 499h20m-17 4h14" stroke="#AC7843" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="817" cy="526" rx="50" ry="10" fill="#634E47" opacity=".18"/>
+    <path d="M785 461h66l-7 63c-1 9-12 15-27 15s-26-6-27-15l-5-63Z" fill="#F9EEE2" stroke="#D0B6A1" stroke-width="2"/>
+    <ellipse cx="818" cy="462" rx="33" ry="10" fill="#E8C6A8"/>
+    <ellipse cx="818" cy="462" rx="25" ry="6" fill="#936248"/>
+    <path d="M850 474c26-2 28 36-3 37" stroke="#E8D7C9" stroke-width="10" stroke-linecap="round"/>
+    <path d="M806 447c-8-12 7-17 0-27m18 27c-8-12 7-17 0-27" stroke="#C3A18D" stroke-width="3" stroke-linecap="round" opacity=".68"/>
+
+    <!-- Small forward-motion arrow joins the three ideas. -->
+    <path d="M138 581h194m306 0h182" stroke="#D5AB98" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 8"/>
+    <circle cx="355" cy="581" r="5" fill="#E58D7C"/>
+    <circle cx="603" cy="581" r="5" fill="#7EA68D"/>
+  </g>
+  <rect x="14.5" y="14.5" width="931" height="591" rx="37.5" stroke="#E4CEC0"/>
+</svg>
