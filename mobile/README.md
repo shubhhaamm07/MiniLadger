@@ -1,6 +1,6 @@
 # MiniLedger app
 
-This Expo app lets one signed-in user record money lent to friends. The backend owns the data and calculates the summary. The app displays those values and sends user actions to the API.
+This Expo app lets one signed-in user record money lent to friends. The backend owns the data and calculates the summary. The app displays those values and sends user actions to the API. The layout adjusts from narrow phones to tablets and web screens.
 
 ## Run locally
 
@@ -16,12 +16,16 @@ The app normally finds the backend using Expo's development host. If the phone c
 | File | Purpose |
 | --- | --- |
 | `src/app/index.tsx` | Phone and OTP login screen |
-| `src/app/dashboard.tsx` | Summary card, loans, overdue styling, repayment action |
+| `src/app/dashboard.tsx` | Summary card, status filters, loans, overdue styling, repayment action |
 | `src/app/add.tsx` | New-loan form and validation |
+| `src/components/DatePickerModal.tsx` | Calendar for picking a due date |
+| `src/hooks/useResponsiveLayout.ts` | Shared spacing and layout rules for screen sizes |
 | `src/lib/api.ts` | One place for all backend requests |
 | `src/lib/format.ts` | Rupee/date formatting and overdue check |
 | `src/context/AuthContext.tsx` | Shares the login token between screens |
 
 The backend stores amounts in **paise** to avoid decimal-money rounding errors. For example, ₹1,200.50 is stored as `120050` paise. The app converts it back to rupees for display.
+
+The **Still to receive** figure is total lent minus total repaid. For example, ₹1,200 lent minus ₹500 repaid shows ₹700 still to receive. The overdue amount only includes unpaid loans past their due date.
 
 The login token is kept in memory for this small demo. Closing or reloading the app means signing in again. Receipt photos and real SMS delivery are outside this version.
