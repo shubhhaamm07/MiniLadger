@@ -11,6 +11,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import FriendsExchange from "../../assets/illustrations/friends-exchange.svg";
 import { Brand } from "../components/Brand";
 import { useAuth } from "../context/AuthContext";
 import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
@@ -117,7 +118,15 @@ export default function LoginScreen() {
                   </Text>
                 </View>
                 {isWide && (
-                  <Text className="mt-10 text-sm text-[#BFB4AC]">
+                  <View
+                    className="mt-3 items-center"
+                    accessibilityLabel="Two friends exchanging money, with a due date and repayment check"
+                  >
+                    <FriendsExchange width="100%" height={230} />
+                  </View>
+                )}
+                {isWide && (
+                  <Text className="mt-2 text-sm text-[#BFB4AC]">
                     Know what is due, what is back, and what is still yours.
                   </Text>
                 )}

@@ -12,6 +12,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import ReceiptCheck from "../../assets/illustrations/receipt-check.svg";
 import { Brand } from "../components/Brand";
 import { DatePickerModal } from "../components/DatePickerModal";
 import { useAuth } from "../context/AuthContext";
@@ -21,7 +22,7 @@ import { formatDate } from "../lib/format";
 
 export default function AddLoanScreen() {
   const { token } = useAuth();
-  const { isWide, horizontalPadding } = useResponsiveLayout();
+  const { isWide, isNarrow, horizontalPadding } = useResponsiveLayout();
   const [friendName, setFriendName] = useState("");
   const [amount, setAmount] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -110,17 +111,28 @@ export default function AddLoanScreen() {
               }}
             >
               <View style={{ flex: isWide ? 1 : undefined }}>
-                <Text className="text-[11px] font-bold uppercase tracking-[2px] text-coral">
-                  A SMALL NOTE, WELL KEPT
-                </Text>
-                <Text className="mt-2 text-[32px] font-bold tracking-tight text-ink">
-                  Add a loan
-                </Text>
-                <Text className="mt-2 text-[14px] leading-5 text-muted">
-                  Record the essentials. We will keep them easy to find.
-                </Text>
+                <View className="flex-row items-center">
+                  <View className="flex-1">
+                    <Text className="text-[11px] font-bold uppercase tracking-[2px] text-coral">
+                      A SMALL NOTE, WELL KEPT
+                    </Text>
+                    <Text className="mt-2 text-[32px] font-bold tracking-tight text-ink">
+                      Add a loan
+                    </Text>
+                    <Text className="mt-2 text-[14px] leading-5 text-muted">
+                      Record the essentials. We will keep them easy to find.
+                    </Text>
+                  </View>
+                  {!isWide && (
+                    <ReceiptCheck
+                      width={isNarrow ? 72 : 98}
+                      height={isNarrow ? 68 : 86}
+                      accessibilityLabel="A loan note with a repayment check"
+                    />
+                  )}
+                </View>
                 {isWide && (
-                  <View className="mt-8 rounded-[28px] bg-ink p-7">
+                  <View className="mt-8 items-center rounded-[28px] bg-ink p-7">
                     <Text className="text-[18px] font-semibold leading-6 text-white">
                       A clearer picture of money between friends.
                     </Text>
@@ -128,6 +140,7 @@ export default function AddLoanScreen() {
                       Your entry will appear in the ledger, and we will
                       highlight it when the due date passes.
                     </Text>
+                    <ReceiptCheck width={230} height={185} />
                   </View>
                 )}
               </View>

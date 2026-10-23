@@ -9,6 +9,8 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import CoinCheck from "../../assets/illustrations/coin-check.svg";
+import LedgerEmpty from "../../assets/illustrations/ledger-empty.svg";
 import { Brand } from "../components/Brand";
 import { useAuth } from "../context/AuthContext";
 import { useResponsiveLayout } from "../hooks/useResponsiveLayout";
@@ -196,6 +198,11 @@ export default function DashboardScreen() {
                 width: isWide ? 360 : "100%",
               }}
             >
+              <CoinCheck
+                width={50}
+                height={50}
+                style={{ position: "absolute", right: 16, top: 12 }}
+              />
               <Text className="text-[11px] font-bold uppercase tracking-[2px] text-[#E8A29E]">
                 STILL TO RECEIVE
               </Text>
@@ -313,6 +320,12 @@ export default function DashboardScreen() {
                 <ActivityIndicator className="mt-10" color="#E96F6B" />
               ) : loans.length === 0 ? (
                 <View className="mt-5 rounded-[24px] border border-[#E9E0D9] bg-white p-6">
+                  <View
+                    className="items-center"
+                    accessibilityLabel="An empty ledger ready for your first loan"
+                  >
+                    <LedgerEmpty width={168} height={122} />
+                  </View>
                   <Text className="text-[11px] font-bold uppercase tracking-[2px] text-coral">
                     A FRESH START
                   </Text>
